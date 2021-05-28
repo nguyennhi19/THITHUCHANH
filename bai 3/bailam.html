@@ -16,12 +16,6 @@
                 this.name = name;
                 this.age = age;
                 this.email = email;
-                this.mathScore=0;
-                this.physicsScore=0;
-                this.chemistryScore=0;
-                this.averageScore=0;
-                this.rank="";
-
 
             }
             inputScores() {
@@ -30,8 +24,9 @@
                 this.chemistryScore =parseInt( prompt("Nhập điểm hóa :"));
             }
             calAverageScores() {
-                this.averageScore = ((this.mathScore * 2 + this.physicScore + this.chemistryScore) / 4);
-                
+    
+                this.averageScore = ((this.mathScore * 2 + this.physicsScore + this.chemistryScore) / 4);
+               
             }
             rank() {
                 if (this.averageScore >= 9 && this.averageScore <= 10) {
